@@ -1,20 +1,20 @@
 ;;; packages.el --- rjhilgefort Layer packages File for Spacemacs
 
 ;; List of all packages to install and/or initialize. Built-in packages
-;; which require an initialization must be listed explicitly in the list.
 (setq rjhilgefort-packages
     '(
-      css-mode
-      flycheck
-      grunt
-      js-doc
-      js2-mode
-      pretty-mode
-      vlf
-      vimrc-mode
-      ws-butler
-      yaml-mode
-      ))
+        css-mode
+        flycheck
+        grunt
+        js-doc
+        js2-mode
+        pretty-mode
+        vlf
+        vimrc-mode
+        ws-butler
+        yaml-mode
+        )
+    )
 
 ;; List of packages to exclude.
 (setq rjhilgefort-excluded-packages '())
