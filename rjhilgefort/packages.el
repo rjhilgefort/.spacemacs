@@ -30,7 +30,7 @@
     (use-package flycheck
         :config (global-flycheck-mode)))
 
-(defun oppenlander/init-js2-mode ()
+(defun rjhilgefort/init-js2-mode ()
     (use-package js2-mode
         :defer t
         :config
@@ -62,7 +62,7 @@
     (use-package vimrc-mode :defer t)
     )
 
-(defun oppenladner/init-ws-butler ()
+(defun rjhilgefort/init-ws-butler ()
     (use-package ws-butler
         :init (add-hook 'prog-mode-hook 'ws-butler-mode)
         )
