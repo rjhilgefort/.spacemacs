@@ -249,6 +249,17 @@
 
     ;; Tmux familiarity
     (unbind-key "C-f")
+
+    ;; New lines, formatting, spacing
+    (bind-key "SPC i j" 'spacemacs/insert-line-below-no-indent evil-normal-state-local-map)
+    (bind-key "SPC i J" 'spacemacs/evil-insert-line-below      evil-normal-state-local-map)
+    (bind-key "SPC i k" 'spacemacs/insert-line-above-no-indent evil-normal-state-local-map)
+    (bind-key "SPC i K" 'spacemacs/evil-insert-line-above      evil-normal-state-local-map)
+
+    ;; Vim habits die hard
+    ;; TODO: I made zero effort to move the mappings that were on these keys
+    (bind-key "SPC j j" 'spacemacs/insert-line-below-no-indent evil-normal-state-local-map)
+    (bind-key "SPC k k" 'spacemacs/insert-line-above-no-indent evil-normal-state-local-map)
     )
 
 ;; (define-key evil-normal-state-map (kbd "C-f h") 'evil-window-left)
