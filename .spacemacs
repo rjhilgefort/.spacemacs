@@ -21,22 +21,23 @@
             (auto-completion :variables
                              auto-completion-enable-company-help-tooltip t)
             better-defaults
+            colors
             emacs-lisp
             git
             github
+            html
+            javascript
+            lua
             markdown
             org
+            rjhilgefort
             (shell :variables
                    shell-default-height 30
                    shell-default-position 'bottom)
             syntax-checking
-            version-control
             themes-megapack
-            javascript
-            html
-            lua
-            colors
             tmux
+            version-control
             )
 
         ;; List of additional packages that will be installed without being
@@ -202,7 +203,8 @@
     ;; https://github.com/syl20bnr/spacemacs/issues/988
     (when (and (display-graphic-p) (eq system-type 'darwin))
         (with-eval-after-load 'exec-path-from-shell
-          (exec-path-from-shell-setenv "SHELL" "/bin/bash"))))
+          (exec-path-from-shell-setenv "SHELL" "/bin/bash")))
+    )
 
 
 (defun dotspacemacs/config ()
@@ -231,12 +233,6 @@
         whitespace-indent-tabs-mode nil
         default-tab-width 4
         tab-width 4
-
-        ;; javascript config
-        js-indent-level 4
-        js2-basic-offset 4
-        js2-strict-inconsistent-return-warning nil
-        js2-mode-hide-comments t
         )
 
     ;; Remap redo
