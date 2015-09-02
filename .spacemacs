@@ -213,14 +213,7 @@
 
 (defun dotspacemacs/config ()
     "Configuration function. This function is called at the very end of Spacemacs
-    initialization after layers configuration."
-    ;; (setq powerline-default-separator 'arrow)
-    ;; Better window splitting
-    (bind-key "SPC w h" 'split-window-right           evil-normal-state-local-map)
-    (bind-key "SPC w j" 'split-window-below-and-focus evil-normal-state-local-map)
-    (bind-key "SPC w k" 'split-window-below           evil-normal-state-local-map)
-    (bind-key "SPC w l" 'split-window-right-and-focus evil-normal-state-local-map)
-    )
+    initialization after layers configuration.")
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
