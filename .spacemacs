@@ -25,14 +25,15 @@
             better-defaults
             colors
             emacs-lisp
-            git
+            (git :variables
+                 git-enable-github-support t
+                 git-gutter-use-fringe t)
             github
             html
             javascript
             lua
             markdown
             org
-            rjhilgefort
             (shell :variables
                    shell-default-height 30
                    shell-default-position 'bottom)
@@ -40,6 +41,7 @@
             themes-megapack
             tmux
             version-control
+            rjhilgefort
             )
 
         ;; List of additional packages that will be installed without being
@@ -212,63 +214,13 @@
 (defun dotspacemacs/config ()
     "Configuration function. This function is called at the very end of Spacemacs
     initialization after layers configuration."
-
-    ;; Cleanup whitespace on save
-    (defun cleanup-buffer ()
-        (interactive)
-        (delete-trailing-whitespace))
-    (add-hook 'before-save-hook 'cleanup-buffer)
-
-    (setq-default
-        ;; Follow symlinks when opening files
-        vc-follow-symlinks t
-
-        ;; Word wrap
-        truncate-partial-width-windows nil
-        truncate-lines t
-
-        ;; Rulers (defaults to 80) (TODO: Multiple rulers)
-        fill-column 80
-
-        ;; Tabs, tab stop
-        indent-tabs-mode nil
-        whitespace-indent-tabs-mode nil
-        default-tab-width 4
-        tab-width 4
-        )
-
-    ;; Remap redo
-    (unbind-key "C-r" evil-normal-state-map)
-    (bind-key "U" 'redo evil-normal-state-map)
-
     ;; (setq powerline-default-separator 'arrow)
     ;; Better window splitting
     (bind-key "SPC w h" 'split-window-right           evil-normal-state-local-map)
     (bind-key "SPC w j" 'split-window-below-and-focus evil-normal-state-local-map)
     (bind-key "SPC w k" 'split-window-below           evil-normal-state-local-map)
     (bind-key "SPC w l" 'split-window-right-and-focus evil-normal-state-local-map)
-
-    ;; Tmux familiarity
-    (unbind-key "C-f")
-
-    ;; New lines, formatting, spacing
-    (bind-key "SPC i j" 'spacemacs/insert-line-below-no-indent evil-normal-state-local-map)
-    (bind-key "SPC i J" 'spacemacs/evil-insert-line-below      evil-normal-state-local-map)
-    (bind-key "SPC i k" 'spacemacs/insert-line-above-no-indent evil-normal-state-local-map)
-    (bind-key "SPC i K" 'spacemacs/evil-insert-line-above      evil-normal-state-local-map)
-
-    ;; Vim habits die hard
-    ;; TODO: I made zero effort to move the mappings that were on these keys
-    (bind-key "SPC j j" 'spacemacs/insert-line-below-no-indent evil-normal-state-local-map)
-    (bind-key "SPC k k" 'spacemacs/insert-line-above-no-indent evil-normal-state-local-map)
     )
-
-;; (define-key evil-normal-state-map (kbd "C-f h") 'evil-window-left)
-;; (global-unset-key (kbd "C-f"))
-
-;; (bind-key "C-f l" 'evil-window-right)
-;; (unbind-key "C-r" 'evil-normal-state-minor-mode)
-
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
