@@ -69,7 +69,7 @@
 
         ;; Configure "jk"
         evil-escape-key-sequence "jk"
-        evil-escape-delay 0.2
+        evil-escape-delay 0.1
 
         ;; If non nil output loading progress in `*Messages*' buffer.
         dotspacemacs-verbose-loading nil
@@ -100,7 +100,7 @@
                                     :size 13
                                     :weight normal
                                     :width normal
-                                    :powerline-scale 1.3)
+                                    :powerline-scale 1.5)
 
         dotspacemacs-leader-key "SPC"
 
@@ -149,7 +149,7 @@
 
         ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
         ;; Use to disable fullscreen animations in OSX."
-        dotspacemacs-fullscreen-use-non-native nil
+        dotspacemacs-fullscreen-use-non-native t
 
         ;; If non nil the frame is maximized when Emacs starts up.
         ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
@@ -241,6 +241,7 @@
     (unbind-key "C-r" evil-normal-state-map)
     (bind-key "U" 'redo evil-normal-state-map)
 
+    ;; (setq powerline-default-separator 'arrow)
     ;; Better window splitting
     (bind-key "SPC w h" 'split-window-right           evil-normal-state-local-map)
     (bind-key "SPC w j" 'split-window-below-and-focus evil-normal-state-local-map)
