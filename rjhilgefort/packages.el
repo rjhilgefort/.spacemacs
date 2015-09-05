@@ -8,6 +8,7 @@
         flycheck
         grunt
         gh-md
+        hyde
         js-doc
         js2-mode
         pretty-mode
@@ -69,6 +70,10 @@
     (use-package ws-butler
         :init (add-hook 'prog-mode-hook 'ws-butler-mode)
         )
+    )
+
+(defun rjhilgefort/init-yml-mode ()
+    (use-package yml-mode :defer t)
     )
 
 ;; For each package, define a function rjhilgefort/init-<package-name>

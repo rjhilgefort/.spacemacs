@@ -15,16 +15,16 @@
         ;; List of configuration layers to load. If it is the symbol `all' instead
         ;; of a list then all discovered layers will be installed.
         dotspacemacs-configuration-layers '(
-            ;; ----------------------------------------------------------------
-            ;; Example of useful layers you may want to use right away.
-            ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-            ;; <M-m f e R> (Emacs style) to install them.
-            ;; ----------------------------------------------------------------
             (auto-completion :variables
                              auto-completion-enable-company-help-tooltip t)
             better-defaults
             colors
+            dash
             emacs-lisp
+            emoji
+            evil-snipe
+            evil-commentary
+            games
             (git :variables
                  git-enable-github-support t
                  git-gutter-use-fringe t)
@@ -34,14 +34,20 @@
             lua
             markdown
             org
+            osx
+            pandoc
             rjhilgefort
             (shell :variables
                    shell-default-height 30
                    shell-default-position 'bottom)
+            shell-scripts
             syntax-checking
+            spotify
             themes-megapack
             tmux
             version-control
+            vim-powerline
+            vim-empty-lines
             )
 
         ;; List of additional packages that will be installed without being
