@@ -4,11 +4,14 @@
 (setq rjhilgefort-packages
     '(
         css-mode
+        ember-mode
         flycheck
         grunt
+        gh-md
         js-doc
         js2-mode
         pretty-mode
+        markdown-mode
         vlf
         vimrc-mode
         ws-butler

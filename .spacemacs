@@ -34,6 +34,7 @@
             lua
             markdown
             org
+            rjhilgefort
             (shell :variables
                    shell-default-height 30
                    shell-default-position 'bottom)
@@ -41,7 +42,6 @@
             themes-megapack
             tmux
             version-control
-            rjhilgefort
             )
 
         ;; List of additional packages that will be installed without being
