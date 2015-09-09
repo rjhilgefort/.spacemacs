@@ -13,8 +13,9 @@
         js2-mode
         pretty-mode
         markdown-mode
-        vlf
+        nginx-mode
         vimrc-mode
+        vlf
         ws-butler
         yaml-mode
         )
@@ -26,13 +27,28 @@
 (defun rjhilgefort/init-css-mode ()
     (use-package css-mode
         :defer t
-        :config (setq-default css-indent-offset 2)
-        )
-    )
+        :config
+        (setq-default css-indent-offset 2)))
+
+(defun rjhilgefort/init-ember-mode ()
+    (use-package ember-mode :defer t))
 
 (defun rjhilgefort/init-flycheck ()
     (use-package flycheck
-        :config (global-flycheck-mode)))
+        :config
+        (global-flycheck-mode)))
+
+(defun rjhilgefort/init-grunt ()
+    (use-package grunt :defer t))
+
+(defun rjhilgefort/init-gh-md ()
+    (use-package gh-md :defer t))
+
+(defun rjhilgefort/init-hyde ()
+    (use-package hyde :defer t))
+
+(defun rjhilgefort/init-js-doc ()
+    (use-package js-doc :defer t))
 
 (defun rjhilgefort/init-js2-mode ()
     (use-package js2-mode
@@ -61,21 +77,30 @@
     )
 
 
+(defun rjhilgefort/init-pretty-mode ()
+    (use-package pretty-mode :defer t))
+
+(defun rjhilgefort/init-markdown-mode ()
+    (use-package markdown-mode :defer t))
+
+(defun rjhilgefort/init-nginx-mode ()
+    (use-package nginx-mode :defer t))
 
 (defun rjhilgefort/init-vimrc-mode ()
-    (use-package vimrc-mode :defer t)
-    )
+    (use-package vimrc-mode :defer t))
+
+(defun rjhilgefort/init-vlf ()
+    (use-package vlf :defer t))
 
 (defun rjhilgefort/init-ws-butler ()
     (use-package ws-butler
-        :init (add-hook 'prog-mode-hook 'ws-butler-mode)
-        )
-    )
+        :init (add-hook 'prog-mode-hook 'ws-butler-mode)))
 
-(defun rjhilgefort/init-yml-mode ()
-    (use-package yml-mode :defer t)
-    )
+(defun rjhilgefort/init-yaml-mode ()
+    (use-package yml-mode :defer t))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; For each package, define a function rjhilgefort/init-<package-name>
 ;;
 ;; (defun rjhilgefort/init-my-package ()
