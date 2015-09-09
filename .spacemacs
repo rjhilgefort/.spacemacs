@@ -36,7 +36,6 @@
             org
             osx
             pandoc
-            rjhilgefort
             (shell :variables
                    shell-default-height 30
                    shell-default-position 'bottom)
@@ -48,6 +47,8 @@
             version-control
             vim-powerline
             vim-empty-lines
+            ;; Including last to override all other configuration layers
+            rjhilgefort
             )
 
         ;; List of additional packages that will be installed without being
