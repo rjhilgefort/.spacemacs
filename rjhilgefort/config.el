@@ -4,6 +4,9 @@
 ;; http://stackoverflow.com/questions/8370778/remove-glyph-at-end-of-truncated-lines
 ;; (set-display-table-slot standard-display-table 0 ?\ )
 
+;; `nginx-mode` for "sites-available/enabled"
+(add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
+
 ;; Cleanup whitespace on save
 (defun cleanup-buffer ()
     (interactive)

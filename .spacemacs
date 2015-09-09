@@ -220,9 +220,8 @@
 
 (defun dotspacemacs/user-config ()
     "Configuration function. This function is called at the very end of Spacemacs
-    initialization after layers configuration."
-    (add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
-    )
+    initialization after layers configuration.")
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
