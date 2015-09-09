@@ -42,7 +42,7 @@
                    shell-default-position 'bottom)
             shell-scripts
             syntax-checking
-            spotify
+            ;; spotify
             themes-megapack
             tmux
             version-control
