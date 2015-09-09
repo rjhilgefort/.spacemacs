@@ -2,7 +2,7 @@
 
 ;; List of all packages to install and/or initialize. Built-in packages
 (setq rjhilgefort-packages
-    '(
+      '(
         css-mode
         ember-mode
         flycheck
@@ -18,87 +18,84 @@
         vlf
         ws-butler
         yaml-mode
-        )
-    )
+        ))
 
 ;; List of packages to exclude.
 (setq rjhilgefort-excluded-packages '())
 
 (defun rjhilgefort/init-css-mode ()
-    (use-package css-mode
-        :defer t
-        :config
-        (setq-default css-indent-offset 2)))
+  (use-package css-mode
+    :defer t
+    :config
+    (setq-default
+     css-indent-offset 2
+     )))
 
 (defun rjhilgefort/init-ember-mode ()
-    (use-package ember-mode :defer t))
+  (use-package ember-mode :defer t))
 
 (defun rjhilgefort/init-flycheck ()
-    (use-package flycheck
-        :config
-        (global-flycheck-mode)))
+  (use-package flycheck
+    :config (global-flycheck-mode)
+    ))
 
 (defun rjhilgefort/init-grunt ()
-    (use-package grunt :defer t))
+  (use-package grunt :defer t))
 
 (defun rjhilgefort/init-gh-md ()
-    (use-package gh-md :defer t))
+  (use-package gh-md :defer t))
 
 (defun rjhilgefort/init-hyde ()
-    (use-package hyde :defer t))
+  (use-package hyde :defer t))
 
 (defun rjhilgefort/init-js-doc ()
-    (use-package js-doc :defer t))
+  (use-package js-doc :defer t))
 
 (defun rjhilgefort/init-js2-mode ()
-    (use-package js2-mode
-        :defer t
-        :config
-        (progn
-            (setq-default
-                js-indent-level 4
-                js2-basic-offset 4
-                js2-strict-inconsistent-return-warning nil
-                js2-mode-hide-comments t
-
-                js2-enter-indents-newline t
-                js2-bounce-indent-p t
-                js2-include-jslint-globals t
-                js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum" "it" "describe")
-                ;; Let Flycheck handle errors until js2 mode supports ES6
-                js2-show-parse-errors nil
-                js2-strict-missing-semi-warning nil
-                js2-strict-trailing-comma-warning t
-                js2-include-node-externs t
-                js2-indent-switch-body t
-                )
-            )
-        )
-    )
-
+  (use-package js2-mode
+    :defer t
+    :config
+    (progn
+      (setq-default
+       js-indent-level 4
+       js2-basic-offset 4
+       js2-strict-inconsistent-return-warning nil
+       js2-mode-hide-comments t
+       s2-enter-indents-newline t
+       js2-bounce-indent-p t
+       js2-include-jslint-globals t
+       js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum" "it" "describe")
+       ;; Let Flycheck handle errors until js2 mode supports ES6
+       js2-show-parse-errors nil
+       js2-strict-missing-semi-warning nil
+       js2-strict-trailing-comma-warning t
+       js2-include-node-externs t
+       js2-indent-switch-body t
+       ))))
 
 (defun rjhilgefort/init-pretty-mode ()
-    (use-package pretty-mode :defer t))
+  (use-package pretty-mode :defer t))
 
 (defun rjhilgefort/init-markdown-mode ()
-    (use-package markdown-mode :defer t))
+  (use-package markdown-mode :defer t))
 
 (defun rjhilgefort/init-nginx-mode ()
-    (use-package nginx-mode :defer t))
+  (use-package nginx-mode :defer t))
 
 (defun rjhilgefort/init-vimrc-mode ()
-    (use-package vimrc-mode :defer t))
+  (use-package vimrc-mode :defer t))
 
 (defun rjhilgefort/init-vlf ()
-    (use-package vlf :defer t))
+  (use-package vlf :defer t))
 
 (defun rjhilgefort/init-ws-butler ()
-    (use-package ws-butler
-        :init (add-hook 'prog-mode-hook 'ws-butler-mode)))
+  (use-package ws-butler
+    :init
+    (add-hook 'prog-mode-hook 'ws-butler-mode)
+    ))
 
 (defun rjhilgefort/init-yaml-mode ()
-    (use-package yml-mode :defer t))
-
+  (use-package yml-mode :defer t))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; For each package, define a function rjhilgefort/init-<package-name>
