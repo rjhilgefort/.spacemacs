@@ -24,7 +24,7 @@
 ;; List of packages to exclude.
 (setq rjhilgefort-excluded-packages '())
 
-(defun rjhilgefort/init-css-mode ()
+(defun rjhilgefort/post-init-css-mode ()
   (use-package css-mode
     :defer t
     :config
@@ -35,8 +35,9 @@
 (defun rjhilgefort/init-ember-mode ()
   (use-package ember-mode :defer t))
 
-(defun rjhilgefort/init-flycheck ()
+(defun rjhilgefort/post-init-flycheck ()
   (use-package flycheck
+    :defer t
     :config (global-flycheck-mode)
     ))
 
@@ -49,10 +50,10 @@
 (defun rjhilgefort/init-hyde ()
   (use-package hyde :defer t))
 
-(defun rjhilgefort/init-js-doc ()
+(defun rjhilgefort/post-init-js-doc ()
   (use-package js-doc :defer t))
 
-(defun rjhilgefort/init-js2-mode ()
+(defun rjhilgefort/post-init-js2-mode ()
   (use-package js2-mode
     :defer t
     :config
@@ -77,7 +78,7 @@
 (defun rjhilgefort/init-pretty-mode ()
   (use-package pretty-mode :defer t))
 
-(defun rjhilgefort/init-markdown-mode ()
+(defun rjhilgefort/post-init-markdown-mode ()
   (use-package markdown-mode :defer t))
 
 (defun rjhilgefort/init-nginx-mode ()

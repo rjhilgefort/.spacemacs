@@ -1,3 +1,12 @@
+(configuration-layer/declare-layer
+ '(
+   html
+   javascript
+   markdown
+   syntax-checking
+   ))
+
+;; powerline tweaks
 ;; (setq powerline-default-separator 'arrow)
 
 ;; Remove dollar sign from EOL

@@ -29,10 +29,7 @@
                  git-enable-github-support t
                  git-gutter-use-fringe t)
             github
-            html
-            javascript
             lua
-            markdown
             org
             osx
             pandoc
@@ -40,7 +37,6 @@
                    shell-default-height 30
                    shell-default-position 'bottom)
             shell-scripts
-            syntax-checking
             ;; spotify
             themes-megapack
             tmux
