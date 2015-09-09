@@ -217,7 +217,7 @@
     )
 
 
-(defun dotspacemacs/config ()
+(defun dotspacemacs/user-config ()
     "Configuration function. This function is called at the very end of Spacemacs
     initialization after layers configuration.")
 
