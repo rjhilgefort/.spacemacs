@@ -14,6 +14,7 @@
         pretty-mode
         markdown-mode
         nginx-mode
+        ranger
         vimrc-mode
         vlf
         ws-butler
@@ -81,6 +82,9 @@
 
 (defun rjhilgefort/init-nginx-mode ()
   (use-package nginx-mode :defer t))
+
+(defun rjhilgefort/init-ranger ()
+  (use-package ranger :defer t))
 
 (defun rjhilgefort/init-vimrc-mode ()
   (use-package vimrc-mode :defer t))
