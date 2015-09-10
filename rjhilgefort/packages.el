@@ -13,6 +13,7 @@
         js2-mode
         pretty-mode
         markdown-mode
+        multiple-cursors
         nginx-mode
         ranger
         vimrc-mode
@@ -80,6 +81,9 @@
 
 (defun rjhilgefort/post-init-markdown-mode ()
   (use-package markdown-mode :defer t))
+
+(defun rjhilgefort/init-multiple-cursors ()
+  (use-package multiple-cursors :defer t))
 
 (defun rjhilgefort/init-nginx-mode ()
   (use-package nginx-mode :defer t))
