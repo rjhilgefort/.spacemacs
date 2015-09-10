@@ -4,7 +4,6 @@
 (setq rjhilgefort-packages
       '(
         css-mode
-        editorconfig
         ember-mode
         flycheck
         grunt
@@ -33,9 +32,6 @@
     (setq-default
      css-indent-offset 2
      )))
-
-(defun rjhilgefort/init-editorconfig ()
-  (use-package editorconfig :defer t))
 
 (defun rjhilgefort/init-ember-mode ()
   (use-package ember-mode :defer t))
