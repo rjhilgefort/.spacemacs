@@ -39,3 +39,7 @@
     default-tab-width 4
     tab-width 4
     )
+
+;; Define for multiple-cursors
+;; Making a new one everytime currently
+;; (setq mc/list-file ".mc-lists.el")
