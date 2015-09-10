@@ -24,6 +24,7 @@
         evil-forward-word-end
         evil-goto-line
         evil-insert
+        evil-insert-line
         evil-jump-item
         evil-next-line
         evil-normal-state

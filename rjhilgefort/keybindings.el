@@ -26,10 +26,10 @@
 ;; Multiple cursors
 (bind-key "C-n" 'mc/mark-next-like-this evil-normal-state-map)
 (bind-key "C-p" 'mc/unmark-next-like-this evil-normal-state-map)
-(bind-key "C-c C-p" 'mc/mark-previous-like-this evil-normal-state-map)
-(bind-key "C-c C-n" 'mc/mark-previous-like-this evil-normal-state-map)
-(bind-key "C-c C-c" 'mc/mark-all-like-this-dwim evil-normal-state-map)
-;; TODO: make ESC -> C-g
+(bind-key "C-c p" 'mc/mark-previous-like-this evil-normal-state-map)
+(bind-key "C-c n" 'mc/unmark-previous-like-this evil-normal-state-map)
+(bind-key "C-c C-n" 'mc/mark-all-like-this-dwim evil-normal-state-map)
+;; TODO: make ESC -> "C-g C-g"
 ;; (bind-key "ESC" 'mc/keyboard-quit multiple-cursors-mode)
 
 
