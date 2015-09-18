@@ -30,11 +30,13 @@
         evil-normal-state
         evil-paste-after
         evil-previous-line
+        evil-scroll-down
         evil-search-next
         evil-snipe-f
         evil-visual-char
         evil-visual-line
         evil-yank
+        spacemacs/write-file
         ))
 
 (setq mc/cmds-to-run-once
