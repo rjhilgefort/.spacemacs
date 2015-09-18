@@ -211,12 +211,18 @@
     (when (and (display-graphic-p) (eq system-type 'darwin))
         (with-eval-after-load 'exec-path-from-shell
           (exec-path-from-shell-setenv "SHELL" "/bin/bash")))
+
+    ;; fringe, vertical border colors
+    (set-face-background 'fringe "blue")
+    (set-face-background 'vertical-border "blue")
+
     )
 
 
 (defun dotspacemacs/user-config ()
     "Configuration function. This function is called at the very end of Spacemacs
-    initialization after layers configuration.")
+    initialization after layers configuration."
+    )
 
 
 ;; Do not write anything past this comment. This is where Emacs will
