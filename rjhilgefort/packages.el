@@ -54,7 +54,7 @@
 (defun rjhilgefort/post-init-js-doc ()
   (use-package js-doc :defer t))
 
-(defun rjhilgefort/init-js2-mode ()
+(defun rjhilgefort/post-init-js2-mode ()
   (use-package js2-mode
     :defer t
     :config
