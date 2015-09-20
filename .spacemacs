@@ -43,6 +43,11 @@
             version-control
             vim-powerline
             vim-empty-lines
+            ;; rjhilgefort layer deps
+            html
+            javascript
+            markdown
+            syntax-checking
             ;; Including last to override all other configuration layers
             rjhilgefort
             )

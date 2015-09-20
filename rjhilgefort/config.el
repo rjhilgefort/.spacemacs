@@ -1,9 +1,12 @@
+;; My understanding of this method is that I should be able to
+;; throw some layers here that are deps for this layer
+;; TODO: It doesn't work that way, figure out why
 (configuration-layer/declare-layer
  '(
-   html
-   javascript
-   markdown
-   syntax-checking
+   ;; html
+   ;; javascript
+   ;; markdown
+   ;; syntax-checking
    ))
 
 ;; powerline tweaks
