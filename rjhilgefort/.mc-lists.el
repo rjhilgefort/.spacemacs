@@ -16,6 +16,7 @@
         evil-downcase
         evil-end-of-line
         evil-escape-insert-state
+        evil-ex-repeat-substitute
         evil-first-non-blank
         evil-force-normal-state
         evil-forward-char
