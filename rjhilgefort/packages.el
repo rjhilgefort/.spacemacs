@@ -16,6 +16,7 @@
         multiple-cursors
         nginx-mode
         ranger
+        slim-mode
         vimrc-mode
         vlf
         ws-butler
@@ -90,6 +91,12 @@
 
 (defun rjhilgefort/init-ranger ()
   (use-package ranger :defer t))
+
+(defun rjhilgefort/init-slim-mode ()
+  (use-package slim-mode
+    :mode ("\\.emblem\\'" . slim-mode)
+    :defer t
+    ))
 
 (defun rjhilgefort/init-vimrc-mode ()
   (use-package vimrc-mode :defer t))
