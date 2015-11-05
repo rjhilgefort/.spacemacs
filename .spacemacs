@@ -78,8 +78,8 @@
         dotspacemacs-editing-style 'vim
 
         ;; Configure "jk"
-        evil-escape-key-sequence "jk"
-        evil-escape-delay 0.2
+        ;; evil-escape-key-sequence "jk"
+        ;; evil-escape-delay 0.2
 
         ;; If non nil output loading progress in `*Messages*' buffer.
         dotspacemacs-verbose-loading nil
