@@ -40,6 +40,3 @@
 ;; Define for multiple-cursors
 ;; Making a new one everytime currently
 ;; (setq mc/list-file ".mc-lists.el")
-
-;; Editorconfig is now a minor-mode that is opt-in
-(editorconfig-mode t)
