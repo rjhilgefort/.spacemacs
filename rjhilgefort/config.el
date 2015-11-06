@@ -33,10 +33,13 @@
     ;; Tabs, tab stop
     indent-tabs-mode nil
     whitespace-indent-tabs-mode nil
-    default-tab-width 4
-    tab-width 4
+    default-tab-width 2
+    tab-width 2
     )
 
 ;; Define for multiple-cursors
 ;; Making a new one everytime currently
 ;; (setq mc/list-file ".mc-lists.el")
+
+;; Editorconfig is now a minor-mode that is opt-in
+(editorconfig-mode t)
