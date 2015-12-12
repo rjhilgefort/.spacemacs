@@ -41,7 +41,7 @@
             themes-megapack
             tmux
             version-control
-            vim-powerline
+            ;; vim-powerline
             vim-empty-lines
             ;; rjhilgefort layer deps
             html
