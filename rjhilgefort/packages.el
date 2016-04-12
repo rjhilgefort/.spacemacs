@@ -41,7 +41,12 @@
   (use-package flycheck
     :defer t
     :config (global-flycheck-mode)
-    ))
+    (progn
+      (setq-default flycheck-disabled-checkers
+        (append flycheck-disabled-checkers
+          '(javascript-jshint)
+          )
+        ))))
 
 (defun rjhilgefort/init-grunt ()
   (use-package grunt :defer t))
@@ -71,6 +76,7 @@
        js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum" "it" "describe")
        ;; Let Flycheck handle errors until js2 mode supports ES6
        js2-show-parse-errors nil
+       js2-mode-show-strict-warnings nil
        js2-strict-missing-semi-warning nil
        js2-strict-trailing-comma-warning t
        js2-include-node-externs t
