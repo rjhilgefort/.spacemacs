@@ -213,9 +213,9 @@
 
     ;; Fix issue with prezto on OSX
     ;; https://github.com/syl20bnr/spacemacs/issues/988
-    (when (and (display-graphic-p) (eq system-type 'darwin))
-        (with-eval-after-load 'exec-path-from-shell
-          (exec-path-from-shell-setenv "SHELL" "/bin/bash")))
+    ;; (when (and (display-graphic-p) (eq system-type 'darwin))
+    ;;     (with-eval-after-load 'exec-path-from-shell
+    ;;       (exec-path-from-shell-setenv "SHELL" "/bin/bash")))
 
     ;; fringe, vertical border colors
     (set-face-background 'fringe "blue")
