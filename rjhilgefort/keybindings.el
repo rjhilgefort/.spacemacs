@@ -6,10 +6,10 @@
 
 ;; Better window splitting
 (evil-leader/set-key
-    "wh" 'split-window-right
-    "wj" 'split-window-below-and-focus
-    "wk" 'split-window-below
-    "wl" 'split-window-right-and-focus)
+  "wh" 'split-window-right
+  "wj" 'split-window-below-and-focus
+  "wk" 'split-window-below
+  "wl" 'split-window-right-and-focus)
 
 ;; New lines, formatting, spacing
 (evil-leader/set-key
