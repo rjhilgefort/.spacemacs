@@ -29,6 +29,7 @@
 
     ;; Rulers (defaults to 80) (TODO: Multiple rulers)
     fill-column 80
+    fill-column-indicator t
 
     ;; Tabs, tab stop
     indent-tabs-mode nil
@@ -40,7 +41,3 @@
 ;; Define for multiple-cursors
 ;; Making a new one everytime currently
 ;; (setq mc/list-file ".mc-lists.el")
-
-;; Ruler customization (fill column)
-(set-fill-column 80)
-(turn-on-fci-mode)
