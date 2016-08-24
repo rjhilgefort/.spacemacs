@@ -40,3 +40,7 @@
 ;; Define for multiple-cursors
 ;; Making a new one everytime currently
 ;; (setq mc/list-file ".mc-lists.el")
+
+;; Ruler customization (fill column)
+(set-fill-column 80)
+(turn-on-fci-mode)
