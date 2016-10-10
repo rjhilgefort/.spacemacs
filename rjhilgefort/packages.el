@@ -66,21 +66,22 @@
     :config
     (progn
       (setq-default
-       js-indent-level 4
-       js2-basic-offset 4
-       js2-strict-inconsistent-return-warning nil
-       js2-mode-hide-comments t
-       s2-enter-indents-newline t
-       js2-bounce-indent-p t
-       js2-include-jslint-globals t
-       js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum" "it" "describe")
-       ;; Let Flycheck handle errors until js2 mode supports ES6
-       js2-show-parse-errors nil
-       js2-mode-show-strict-warnings nil
-       js2-strict-missing-semi-warning nil
-       js2-strict-trailing-comma-warning t
-       js2-include-node-externs t
-       js2-indent-switch-body t
+        js-indent-level 4
+        js2-basic-offset 4
+        js2-strict-inconsistent-return-warning nil
+        js2-mode-hide-comments t
+        s2-enter-indents-newline t
+        js2-bounce-indent-p t
+        js2-include-jslint-globals nil
+        js2-global-externs '("module" "require" "jQuery" "$" "_" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "process" "setImmediate" "exports" "enum" "it" "describe")
+        ;; Let Flycheck handle errors until js2 mode supports ES6
+        js2-show-parse-errors nil
+        js2-mode-show-strict-warnings nil
+        js2-strict-missing-semi-warning nil
+        js2-strict-trailing-comma-warning t
+        js2-include-node-externs t
+        js2-indent-switch-body t
+        fill-column-indicator t
        ))))
 
 (defun rjhilgefort/init-pretty-mode ()

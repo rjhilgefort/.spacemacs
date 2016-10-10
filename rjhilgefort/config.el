@@ -28,8 +28,9 @@
     truncate-lines t
 
     ;; Rulers (defaults to 80) (TODO: Multiple rulers)
-    fill-column 80
-    fill-column-indicator t
+    fill-column 120
+    ;; TODO: This doesn't go here, but I want to remember the command
+    ;; spacemacs/toggle-fill-column-indicator-on
 
     ;; Tabs, tab stop
     indent-tabs-mode nil

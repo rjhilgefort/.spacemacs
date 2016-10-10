@@ -225,13 +225,17 @@
 
 
 (defun dotspacemacs/user-config ()
-    "Configuration function. This function is called at the very end of Spacemacs
-    initialization after layers configuration."
+  "Configuration function. This function is called at the very end of Spacemacs
+  initialization after layers configuration."
 
-    ;; Editorconfig is now a minor-mode that is opt-in
-    (editorconfig-mode t)
-    (define-key evil-normal-state-map "\C-z" nil)
+  ;; Editorconfig is now a minor-mode that is opt-in
+  (editorconfig-mode t)
+  (define-key evil-normal-state-map "\C-z" nil)
+
+  (setq-default
+    golden-ratio-mode t
     )
+  )
 
 
 ;; Do not write anything past this comment. This is where Emacs will
