@@ -21,6 +21,7 @@
         vlf
         ws-butler
         yaml-mode
+        moonscript
         ))
 
 ;; List of packages to exclude.
@@ -119,6 +120,9 @@
 
 (defun rjhilgefort/init-yaml-mode ()
   (use-package yml-mode :defer t))
+
+(defun rjhilgefort/init-moonscript ()
+  (use-package moonscript :defer t))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; For each package, define a function rjhilgefort/init-<package-name>
