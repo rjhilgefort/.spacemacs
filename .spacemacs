@@ -232,11 +232,11 @@
   (editorconfig-mode t)
   (define-key evil-normal-state-map "\C-z" nil)
 
+  ;; TODO: Move outta here
   (setq-default
     golden-ratio-mode t
     )
   )
-
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
