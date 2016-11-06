@@ -177,7 +177,8 @@
         dotspacemacs-inactive-transparency 90
 
         ;; If non nil unicode symbols are displayed in the mode line.
-        dotspacemacs-mode-line-unicode-symbols t
+        ;; TODO: Disabled because of: https://github.com/syl20bnr/spacemacs/issues/7653
+        dotspacemacs-mode-line-unicode-symbols nil
 
         ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
         ;; scrolling overrides the default behavior of Emacs which recenters the
