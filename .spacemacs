@@ -237,6 +237,9 @@
   (setq-default
     golden-ratio-mode t
     )
+
+  ;; (setq flycheck-checkers '(javascript-eslint))
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

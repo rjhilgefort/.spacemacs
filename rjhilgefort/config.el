@@ -1,5 +1,4 @@
-;; My understanding of this method is that I should be able to
-;; throw some layers here that are deps for this layer
+;; My understanding of this method is that I should be able to throw some layers here that are deps for this layer
 ;; TODO: It doesn't work that way, figure out why
 (configuration-layer/declare-layer '(html javascript markdown syntax-checking))
 
@@ -12,6 +11,9 @@
 
 ;; `nginx-mode` for "sites-available/enabled"
 (add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
+
+;; `slim-mode` uncommon file extensions
+(add-to-list 'auto-mode-alist '("\\.emblem\\'" . slim-mode))
 
 ;; Cleanup whitespace on save
 (defun cleanup-buffer ()
