@@ -30,7 +30,7 @@
     truncate-lines t
 
     ;; Rulers (defaults to 80) (TODO: Multiple rulers)
-    fill-column 120
+    fill-column 100
     ;; TODO: This doesn't go here, but I want to remember the command
     ;; spacemacs/toggle-fill-column-indicator-on
 
