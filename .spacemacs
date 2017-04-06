@@ -92,12 +92,14 @@
     ;; List of themes, the first of the list is loaded when spacemacs starts.
     ;; Press <SPC> T n to cycle to the next theme in the list (works great
     ;; with 2 themes variants, one dark and one light)
-    dotspacemacs-themes '(material
-                           material-light)
+    dotspacemacs-themes '(
+                          ;; material
+                          ;; material-light
                           ;; sanityinc-tomorrow-eighties
                           ;; spacemacs-dark
                           ;; spacemacs-light
-                          ;; zenburn
+                          zenburn
+                          )
 
     ;; If non nil the cursor color matches the state color.
     dotspacemacs-colorize-cursor-according-to-state t
@@ -216,8 +218,9 @@
   ;;       (exec-path-from-shell-setenv "SHELL" "/bin/bash")))
 
   ;; fringe, vertical border colors
-  (set-face-background 'fringe "blue")
-  (set-face-background 'vertical-border "blue"))
+  ;; (set-face-background 'fringe "blue")
+  ;; (set-face-background 'vertical-border "blue")
+  )
 
 (defun dotspacemacs/user-config ()
   "Configuration function. This function is called at the very end of Spacemacs
@@ -235,15 +238,15 @@
 
   ;; Word wrap
   (setq-default
-    truncate-partial-width-windows nil
-    truncate-lines t)
+   truncate-partial-width-windows nil
+   truncate-lines t)
 
   ;; Tabs, tab stop
   (setq-default
-    indent-tabs-mode nil
-    whitespace-indent-tabs-mode nil
-    default-tab-width 2
-    tab-width 2)
+   indent-tabs-mode nil
+   whitespace-indent-tabs-mode nil
+   default-tab-width 2
+   tab-width 2)
 
   (golden-ratio-mode)
 
@@ -255,11 +258,18 @@
     )
   (add-hook 'js2-mode-hook 'setup-js2-mode)
 
+  ;; Setup react-mode
   (defun setup-react-mode ()
     ;; jsx breaks with `fill-column-indicator`
     (spacemacs/toggle-indent-guide-on)
     )
   (add-hook 'react-mode-hook 'setup-react-mode)
+
+  ;; Settings!
+  (setq-default
+   git-magit-status-fullscreen t
+   global-prettify-symbols-mode t
+   )
 
   ;; TODO: Everything below here needs to be evaluated for validity
   ;; Powerline tweaks
