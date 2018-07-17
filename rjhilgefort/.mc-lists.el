@@ -31,13 +31,16 @@
         evil-normal-state
         evil-paste-after
         evil-previous-line
+        evil-replace
         evil-scroll-down
         evil-search-next
         evil-snipe-f
         evil-visual-char
         evil-visual-line
         evil-yank
+        orgtbl-self-insert-command
         spacemacs/write-file
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once

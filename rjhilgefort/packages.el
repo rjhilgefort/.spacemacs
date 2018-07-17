@@ -173,7 +173,7 @@
     (progn
       ;; TODO: This doesn't apply to the list
       ;; TODO: This is temporary and hack that works because I only use flow on a react project
-      (add-to-list 'magic-mode-alist '("^// @flow" . react-mode))
+      ;; (add-to-list 'magic-mode-alist '("^// @flow" . react-mode))
       (setq-default
        web-mode-code-indent-offset 2
        web-mode-markup-indent-offset 2)

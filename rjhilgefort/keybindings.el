@@ -34,5 +34,19 @@
 ;; TODO: make ESC -> "C-g C-g"
 ;; (bind-key "ESC" 'mc/keyboard-quit multiple-cursors-mode)
 
+;; Macros!
+;; `name-last-kbd-macro`, `insert-kbd-macro` (in funcs.el), add an entry here
+(spacemacs/declare-prefix "om" "macros")
+(spacemacs/declare-prefix "omt" "treis")
+(evil-leader/set-key
+  "omf" 'macros-func-expression)
+(evil-leader/set-key
+  "omti" 'macros-treis-insert
+  "omtr" 'macros-treis-remove)
 
-;; Vim habits die hard (and they go here)
+;; Prettier
+(evil-leader/set-key
+  "op" 'prettier-js-mode)
+
+(evil-leader/set-key
+  "ol" 'yarn-run-lint-fix)
