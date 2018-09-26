@@ -72,6 +72,7 @@
                                        prettier-js
                                        graphql-mode
                                        add-node-modules-path
+                                       editorconfig
                                        )
 
     ;; A list of packages and/or extensions that will not be install and loaded.
@@ -325,6 +326,9 @@
   (setq edit-server-url-major-mode-alist
         '(("github\\.com" . org-mode)))
 
+  ;; Editorconfig mode
+  ;; https://www.johbo.com/2016/supporting-editorconfig-in-spacemacs.html
+  (editorconfig-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
