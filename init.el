@@ -318,8 +318,7 @@
   ;; (set-display-table-slot standard-display-table 0 ?\ )
 
   ;; Define for multiple-cursors
-  ;; Making a new one everytime currently
-  ;; (setq mc/list-file ".mc-lists.el")
+  (setq mc/list-file "~/.spacemacs.d/.mc-lists.el")
 
   ;; Open github text areas as org buffers
   ;; currently they are opened as markdown

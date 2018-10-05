@@ -101,7 +101,9 @@
         js2-indent-switch-body t
         ;; Let Flycheck handle errors until js2 mode supports ES6
         flycheck-disabled-checkers '(javascript-jshint)
-        flycheck-checkers '(javascript-eslint))
+        flycheck-checkers '(javascript-eslint)
+        company-mode t
+        )
       )))
 
 (defun rjhilgefort/init-pretty-mode ()
